@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<!-- Icon -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Bootstrap Css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="js/flipbook.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $(".book-1").flipBook({
+            pages:[
+                {src:"images/book2/1.jpg", thumb:"images/book2/1.jpg", title:"Cover"},
+                {src:"images/book2/2.jpg", thumb:"images/book2/2.jpg", title:"Page 2"},
+                {src:"images/book2/3.jpg", thumb:"images/book2/3.jpg", title:"Page 3"},
+                {src:"images/book2/4.jpg", thumb:"images/book2/4.jpg", title:"Page 4"},
+                {src:"images/book2/5.jpg", thumb:"images/book2/5.jpg", title:"Page 5"},
+                {src:"images/book2/6.jpg", thumb:"images/book2/6.jpg", title:"Page 6"},
+                {src:"images/book2/7.jpg", thumb:"images/book2/7.jpg", title:"Page 7"},
+                {src:"images/book2/8.jpg", thumb:"images/book2/8.jpg", title:"Page 8"},
+                {src:"images/book2/9.jpg", thumb:"images/book2/9.jpg", title:"Page 9"},
+                {src:"images/book2/10.jpg", thumb:"images/book2/10.jpg", title:"Page 10"},
+                {src:"images/book2/11.jpg", thumb:"images/book2/11.jpg", title:"Page 11"},
+                {src:"images/book2/12.jpg", thumb:"images/book2/12.jpg", title:"Page 12"},
+            ],
+      			btnShare : {enabled:false},
+            btnPrint : {
+              hideOnMobile:true
+            },
+            btnDownloadPages : {
+              enabled: true,
+              title: "Download pages",
+              icon: "fa-download",
+              icon2: "file_download",
+              url: "images/pdf.rar",
+              name: "allPages.zip",
+              hideOnMobile:false
+            },
+            pdfUrl:'pdf/pdf.pdf',
+            btnColor:'rgb(255,120,60)',
+            sideBtnRadius:60,
+            sideBtnSize:60,
+            sideBtnBackground:"rgba(0,0,0,.7)",
+            sideBtnColor:'rgb(255,120,60)',
+            lightBox:true,
+            viewMode:"3d",
+            layout:3,
+            btnSound:{vAlign:"top", hAlign:"left"},
+            btnAutoplay:{vAlign:"top", hAlign:"left"},
+            currentPage:{vAlign:"bottom", hAlign:"left"}
+        });
+    })
+</script>
+
+<style type="text/css">
+    body {
+      background-color: #f6f6f6;
+    }
+    .bookshelf .thumb{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0px 0.5%;
+        width: 15% !important;
+        box-shadow:0px 1px 3px rgba(0,0,0,.3);
+        max-width:100px;
+    }
+    .bookshelf .thumb img{
+        width:100%;
+        display:block;
+        vertical-align:top;
+    }
+    .bookshelf .shelf-img{
+        z-index:0;
+        height: auto;
+        max-width: 100%;
+        vertical-align: top;
+        margin-top:-12px;
+    }
+    .bookshelf .covers{
+        width:100%;
+        height:auto;
+        z-index: 99;
+        position: relative;
+        text-align:center;
+    }
+    .bookshelf{
+        text-align: center;
+        padding:0px;
+    }
+</style>
+<link rel="shortcut icon" href="images/KPK_Logo.svg">
+<title>Home</title>
+</head>
+
+<body>
+
+  <!-- Just an image -->
+  <nav class="navbar navbar-light bg-white fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" width="125" height="50" alt="">
+    </a>
+  </nav>
+
+  <br><br><br><br><br>
+
+  <div class="bookshelf">
+      <div class="covers">
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+      </div>
+      <img class="shelf-img" src="images/shelf_wood.png">
+  </div>
+  <div class="bookshelf">
+      <div class="covers">
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+      </div>
+      <img class="shelf-img" src="images/shelf_glass.png">
+  </div>
+  <div class="bookshelf">
+      <div class="covers">
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+        <div class="thumb book-1"><img src="images/book2/1.jpg"></div>
+      </div>
+      <img class="shelf-img" src="images/shelf_metal.png">
+  </div>
+
+  <!-- Footer -->
+  <section id="footer" class="footer mt-5">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Tentang KPK</h5>
+          <ul class="list-unstyled quick-links">
+          <li><a href="https://www.kpk.go.id/id/tentang-kpk/sekilas-komisi-pemberantasan-korupsi"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="https://www.kpk.go.id/id/tentang-kpk/pejabat-struktural"><i class="fa fa-angle-double-right"></i>Pejabat Struktural</a></li>
+            <li><a href="https://www.kpk.go.id/id/tentang-kpk/roadmap-dan-rencana-strategis"><i class="fa fa-angle-double-right"></i>Rencana Strategis</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Layanan Publik</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.kpk.go.id/id/layanan-publik/pengaduan-masyarakat/mengenal-pengaduan-masyarakat"><i class="fa fa-angle-double-right"></i>Pengaduan Masyarakat</a></li>
+            <li><a href="https://www.kpk.go.id/id/layanan-publik/laporan-harta-kekayaan-penyelenggaraan-negara/mengenal-lhkpn"><i class="fa fa-angle-double-right"></i>LHKPN</a></li>
+            <li><a href="https://www.kpk.go.id/id/layanan-publik/gratifikasi/mengenal-gratifikasi"><i class="fa fa-angle-double-right"></i>Gratifikasi</a></li>
+            <li><a href="https://www.kpk.go.id/id/layanan-publik/informasi-publik"><i class="fa fa-angle-double-right"></i>Informasi Publik</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Kontak KPK</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.google.com/maps/dir/-6.1677568,106.6115072/GEDUNG+KPK+Jl.+Kuningan+Persada+Kav.+4+Jakarta+Selatan+12950/@-6.1687329,106.5817096,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f40eaa579f6f:0x3177a5ac88a987e8!2m2!1d106.8307239!2d-6.2077814"><i class="fas fa-map-marker-alt"></i></i>GEDUNG KPK Jl. Kuningan Persada Kav. 4 Jakarta Selatan 12950</a></li>
+            <li><a href="#"><i class="fas fa-phone"></i>(021) 2557 8300</a></li>
+            <li><a href="#"><i class="fas fa-fax"></i>(021) 2557 8333</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i>informasi@kpk.go.id</a></li>
+            <li><a href="#"><i class="fas fa-headset"></i></i>Call Center: 198</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.instagram.com/official.kpk/"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/kpk_ri?lang=id"><i class="fab fa-twitter-square"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/KomisiPemberantasanKorupsi"><i class="fab fa-facebook-square"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/user/HUMASKPK"><i class="fab fa-youtube-square"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p class="h6">Hak Cipta © 2017 Komisi Pemberantasan Korupsi. Semua Hak Dilindungi.</p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Footer -->
+
+  <!-- Bootstrap Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
