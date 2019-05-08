@@ -25,26 +25,24 @@
 
       $(document).ready(function () {
           $("#read").flipBook({
-            // Layout Setting
+            //Layout Setting
             pdfUrl:'pdf/pdf.pdf',
             lightBox:true,
             layout:3,
             currentPage:{vAlign:"bottom", hAlign:"left"},
             // BTN SETTING
+            btnShare : {enabled:false},
             btnPrint : {
-              hideOnMobile:false
+              hideOnMobile:true
             },
             btnDownloadPages : {
-              enabled: false
-            },
-            btnShare : {
-              enabled: false
-            },
-            btnDownloadPdf : {
-              enabled: false
-            },
-            btnPrint : {
-              enabled: false
+              enabled: true,
+              title: "Download pages",
+              icon: "fa-download",
+              icon2: "file_download",
+              url: "images/pdf.rar",
+              name: "allPages.zip",
+              hideOnMobile:false
             },
             btnColor:'rgb(255,120,60)',
             sideBtnColor:'rgb(255,120,60)',
@@ -52,73 +50,34 @@
             sideBtnBackground:"rgba(0,0,0,.7)",
             sideBtnRadius:60,
             btnSound:{vAlign:"top", hAlign:"left"},
-            btnAutoplay:{vAlign:"top", hAlign:"left"}
-        });
-        $("#download").flipBook({
-          pdfUrl:'pdf/pdf.pdf',
-          layout:3,
-          lightBox:true,
-          lightboxBackground:'rgba(220,225,229,1)',
-          sideNavigationButtons:false,
-          // button
-          btnColor:'rgb(255,120,60)',
-          btnBookmark : {
-            enabled: false
-          },
-          btnAutoplay : {
-            enabled: false
-          },
-          btnNext : {
-            enabled: false
-          },
-          btnPrev : {
-            enabled: false
-          },
-          btnSound: {
-            enabled: false
-          },
-          btnPrint : {
-            enabled : false
-          },
-          btnDownloadPages : {
-            enabled: false
-          },
-          btnDownloadPdf : {
-            forceDownload: true,
+            btnAutoplay:{vAlign:"top", hAlign:"left"},
+            // SHARING
+            btnShare : {
+              enabled: true,
+              title: "Share",
+              icon: "fa-share-alt"
+            },
+            facebook : {
+              enabled: true,
+              url: "ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
+            },
+            google_plus : {
+              enabled: false
+            },
+            email : {
+              enabled: true,
+              url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf",
+              title: "PDF KPK",
+              description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
+            },
+            twitter : {
+              enabled: true,
+              url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
+            },
+            pinterest : {
             enabled: true,
-            title: "Download PDF",
-            icon: "fa-download",
-            url: null,
-            openInNewWindow: true,
-            name: "allPages.pdf"
-          },
-          // SHARING
-          btnShare : {
-            enabled: true,
-            title: "Share",
-            icon: "fa-share-alt"
-          },
-          facebook : {
-            enabled: true,
-            url: "ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
-          },
-          google_plus : {
-            enabled: false
-          },
-          email : {
-          enabled: true,
-          url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf",
-          title: "PDF KPK",
-          description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
-          },
-          twitter : {
-          enabled: true,
-          url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
-          },
-          pinterest : {
-          enabled: true,
-          url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
-          }
+            url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
+            }
         });
       })
   </script>
@@ -178,7 +137,7 @@
             <!-- Button -->
             <div class="button">
               <a id="read" class="btn btn-primary mt-2 text-white">Baca PDF <i class="fas fa-book-reader fa-lg"></i></a>
-              <a id="download" class="btn btn-primary mt-2 text-white">Unduh PDF <i class="fas fa-download fa-lg"></i></a>
+              <a href="pdf/pdf.pdf" class="btn btn-primary mt-2 text-white" download>Unduh PDF <i class="fas fa-download fa-lg"></i></a>
             </div>
             <!-- Description -->
             <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quo velit consequuntur, iste, impedit dignissimos vitae nesciunt et commodi quos quis iusto est iure tenetur eum amet quas temporibus esse praesentium incidunt sequi ratione. Fuga ab quas itaque enim, molestiae, totam, necessitatibus magni dolores eligendi obcaecati libero omnis iste. Facilis.</p>
